@@ -28,6 +28,30 @@
 	
 	</head>
 	<body>
+		<!-- UP ----------------------------->
+
+		<button class="goup" onclick="topFunction()" id="myBtn">
+			<i class="fas fa-angle-double-up"></i>
+		</button>
+
+		<script type="text/javascript">
+			
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+			        document.getElementById("myBtn").style.right = "30px";
+			    } else {
+			        document.getElementById("myBtn").style.right = "-50px";
+			    }
+			}
+
+			function topFunction() {
+			    document.body.scrollTop = 0; // For Safari
+			    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+
+		</script>
 
 		<!-- NAV ----------------------->
 
